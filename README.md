@@ -42,7 +42,7 @@ I used these concepts commonly found in p5.js animations:
 These methods are general p5.js animation approaches.
 # References & Acknowledgments
 * Core structure based on the group project scaffold
-* Use the millis () and lerp () documentation of p5.js to support the animation part.
+* Use the millis ()[Code Source](https://p5js.org/reference/p5/millis/) and lerp ()[Code Source](https://p5js.org/reference/p5/lerp/) documentation of p5.js to support the animation part.
 * The main code is derived from classroom materials. 
 * Inspiration from plant time-lapse videos.
 * Conceptually influenced by the ideas of indigenous art and culture.
