@@ -21,13 +21,14 @@ In the original group code, the lines connecting the circles are static. I set t
 ## Technical Overview
 I introduced a time-based system into the group code by giving each circle and each line its own animation schedule.
 
-1. Track animation time: millis() [Code Source](https://p5js.org/reference/p5/millis/)
-* The animation runs on a 15-second loop:
+* Track animation time: millis() [Code Source](https://p5js.org/reference/p5/millis/)
 
-First half: growth (0 → 1)
+The animation runs on a 15-second loop:
+1. First half: growth (0 → 1)
 
-Second half: rewind (1 → 0)
-2. Gradually draw lines and shapes: lerp() [Code Source](https://p5js.org/reference/p5/lerp/)
+2. Second half: rewind (1 → 0)
+
+* Gradually draw lines and shapes: lerp() [Code Source](https://p5js.org/reference/p5/lerp/)
 ## Key Techniques
 * Layered time control for each circle
 * Staggered line animation using lerp()
