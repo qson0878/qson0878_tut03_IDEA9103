@@ -139,9 +139,6 @@ function drawNetworkLines(masterP) {
   stroke(linkColor);
   strokeWeight(10); // Fixed wide width
   
-  // strokeCap(ROUND) sets rounded line endings for smoother, organic-looking connectors.
-  // From the p5.js reference: https://p5js.org/reference/p5/strokeCap/
-  strokeCap(ROUND); // Rounded ends for a softer, organic look
   // Calculate a "virtual" time based on masterP instead of millis()
   // This makes the animation reversible.
   let totalNetworkTime = (networkLines.length - 1) * lineDelay + lineGrowDuration;
@@ -610,10 +607,6 @@ function setup() {
   let size = min(windowWidth, windowHeight);
   createCanvas(size, size);
 
-  // pixelDensity() was not covered in class. 
-  // It comes from the p5.js reference: https://p5js.org/reference/p5/pixelDensity/
-  // It increases the device pixel ratio so the artwork renders more sharply on high-DPI/Retina screens.
-  pixelDensity(2);
 
   // --- 1. Colour palette system (Aboriginal-inspired style) ---
   globalBgColor = color(30, 20, 15); // Deep, dark earth background
